@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ZERO KM">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlpFUk8gS00gLSBFeWzDvGzDvG0gxLBDw6duIiwKICAic2hvcnRfbmFtZSI6ICJaRVJPIEtNIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwMDAwMDAiLAogICJ0aGVtZV9jb2xvciI6ICIjMDAwMDAwIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ2RlZnMlM0UlM0NsaW5lYXJHcmFkaWVudCBpZD0nZycgeDElM0QnMCUyNScgeTElM0QnMCUyNScgeDIlM0QnMTAwJTI1JyB5MiUzRCcxMDAlMjUnJTNFJTNDc3RvcCBvZmZzZXQlM0QnMCUyNScgc3R5bGUlM0Qnc3RvcC1jb2xvcjolMjM3OEZGRDInLyUzRSUzQ3N0b3Agb2Zmc2V0JTNEJzEwMCUyNScgc3R5bGUlM0Qnc3RvcC1jb2xvcjolMjNGRkI0OTknLyUzRSUzQy9saW5lYXJHcmFkaWVudCUzRSUzQy9kZWZzJTNFJTNDcmVjdCB3aWR0aCUzRCcxMDAnIGhlaWdodCUzRCcxMDAnIGZpbGwlM0QndXJsKCUyM2cpJy8lM0UlM0N0ZXh0IHglM0QnNTAlMjUnIHklM0QnNTUlMjUnIGZvbnQtc2l6ZSUzRCc0MCcgZm9udC1mYW1pbHklM0QnQXJpYWwnIGZpbGwlM0QnJTIzMDAwJyB0ZXh0LWFuY2hvciUzRCdtaWRkbGUnJTNFMCUzQy90ZXh0JTNFJTNDL3N2ZyUzRSIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ2RlZnMlM0UlM0NsaW5lYXJHcmFkaWVudCBpZD0nZycgeDElM0QnMCUyNScgeTElM0QnMCUyNScgeDIlM0QnMTAwJTI1JyB5MiUzRCcxMDAlMjUnJTNFJTNDc3RvcCBvZmZzZXQlM0QnMCUyNScgc3R5bGUlM0Qnc3RvcC1jb2xvcjolMjM3OEZGRDInLyUzRSUzQ3N0b3Agb2Zmc2V0JTNEJzEwMCUyNScgc3R5bGUlM0Qnc3RvcC1jb2xvcjolMjNGRkI0OTknLyUzRSUzQy9saW5lYXJHcmFkaWVudCUzRSUzQy9kZWZzJTNFJTNDcmVjdCB3aWR0aCUzRCcxMDAnIGhlaWdodCUzRCcxMDAnIGZpbGwlM0QndXJsKCUyM2cpJy8lM0UlM0N0ZXh0IHglM0QnNTAlMjUnIHklM0QnNTUlMjUnIGZvbnQtc2l6ZSUzRCc0MCcgZm9udC1mYW1pbHklM0QnQXJpYWwnIGZpbGwlM0QnJTIzMDAwJyB0ZXh0LWFuY2hvciUzRCdtaWRkbGUnJTNFMCUzQy90ZXh0JTNFJTNDL3N2ZyUzRSIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdCn0=">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2378FFD2'/%3E%3Cstop offset='100%25' style='stop-color:%23FFB499'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23g)'/%3E%3Ctext x='50%25' y='55%25' font-size='40' font-family='Arial' fill='%23000' text-anchor='middle'%3E0%3C/text%3E%3C/svg%3E">
+  <title>ZERO KM · Eylülüm İçin</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+    
+    :root {
+      --bg-deep: #000000;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --glass-bg: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.75);
+      --text-muted: rgba(255, 255, 255, 0.50);
+      --accent-mint: #78FFD2;
+      --accent-coral: #FFB499;
+      --accent-purple: #C299FF;
+      --accent-glow: rgba(120, 255, 210, 0.15);
+      --shadow-glow: 0 0 60px rgba(120, 255, 210, 0.08);
+      --shadow-deep: 0 30px 90px rgba(0, 0, 0, 0.6);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+    }
+    
+    html {
+      /* iOS safe area support for iPhone 15 */
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      /* Smooth scroll snapping */
+      scroll-behavior: smooth;
+      scroll-snap-type: y proximity;
+    }
+    
+    body {
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000000;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      /* iOS momentum scrolling */
+      -webkit-overflow-scrolling: touch;
+      /* Prevent pull-to-refresh bounce */
+      overscroll-behavior-y: contain;
+      /* Better touch handling */
+      touch-action: pan-y;
+    }
+    
+    /* UZAY YILDIZLARI */
+    .stars, .stars2, .stars3 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .stars {
+      background: transparent;
+      animation: twinkle 3s ease-in-out infinite;
+    }
+    
+    .stars2 {
+      background: transparent;
+      animation: twinkle 4s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+    
+    .stars3 {
+      background: transparent;
+      animation: twinkle 5s ease-in-out infinite;
+      animation-delay: 2s;
+    }
+    
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    }
+    
+    /* 2026 LIQUID GLASS MORPHISM */
+    .glass {
+      background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 100%);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .glass::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.1), 
+        transparent);
+      animation: shimmer 8s infinite;
+    }
+    
+    @keyframes shimmer {
+      0%, 100% { left: -100%; }
+      50% { left: 100%; }
+    }
+    
+    /* 3D DEPTH & SPATIAL DESIGN */
+    .spatial-card {
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .spatial-card:hover {
+      transform: translateZ(20px) rotateX(2deg) rotateY(2deg);
+    }
+    
+    /* KINETIC TYPOGRAPHY - 2026 TREND */
+    .kinetic-text {
+      display: inline-block;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral), var(--accent-purple));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 8s ease infinite, text-glow 2s ease-in-out infinite;
+    }
+    
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    @keyframes text-glow {
+      0%, 100% { filter: brightness(1) drop-shadow(0 0 8px rgba(120, 255, 210, 0.3)); }
+      50% { filter: brightness(1.2) drop-shadow(0 0 16px rgba(120, 255, 210, 0.6)); }
+    }
+    
+    .word-reveal {
+      opacity: 0;
+      transform: translateY(30px) rotateX(-15deg);
+      animation: word-rise 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+    
+    @keyframes word-rise {
+      to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+    }
+    
+    /* SCROLL STORYTELLING - iPhone 15 Optimized */
+    section {
+      min-height: 100vh;
+      min-height: 100dvh; /* Dynamic viewport height for iOS */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: max(80px, env(safe-area-inset-top)) 20px max(80px, env(safe-area-inset-bottom));
+      position: relative;
+      opacity: 0;
+      transform: translateY(60px);
+      transition: opacity 1.2s cubic-bezier(0.23, 1, 0.32, 1),
+                  transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+      /* Smooth scroll on iOS */
+      scroll-snap-align: start;
+    }
+    
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* AMBIENT PARTICLES */
+    .particles {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--accent-mint);
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float-particle linear infinite;
+      box-shadow: 0 0 10px var(--accent-mint);
+    }
+    
+    @keyframes float-particle {
+      0% {
+        transform: translateY(100vh) translateX(0) scale(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.3;
+      }
+      90% {
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(50px) scale(1);
+        opacity: 0;
+      }
+    }
+    
+    /* GATE OVERLAY */
+    .gate-overlay {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 50% 40%, 
+        rgba(120, 255, 210, 0.15) 0%,
+        rgba(0, 0, 0, 0.95) 50%,
+        #000000 100%);
+      backdrop-filter: blur(30px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    .gate-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.95);
+    }
+    
+    .gate-content {
+      max-width: 600px;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .gate-title {
+      font-size: clamp(32px, 6vw, 64px);
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+    
+    .gate-subtitle {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+    
+    /* BUTTONS - MICRO DELIGHT + iOS OPTIMIZED */
+    .btn {
+      position: relative;
+      padding: 18px 36px;
+      min-height: 56px; /* iOS recommended touch target */
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      overflow: hidden;
+      font-family: inherit;
+      /* iOS touch optimizations */
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral));
+      color: #000;
+      box-shadow: 0 10px 30px rgba(120, 255, 210, 0.3);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(120, 255, 210, 0.5);
+    }
+    
+    .btn-primary:active {
+      transform: translateY(-2px) scale(0.98);
+    }
+    
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-primary);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+    }
+    
+    /* HERO SECTION */
+    .hero-container {
+      max-width: 1200px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    @media (max-width: 968px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+    
+    .hero-text h1 {
+      font-size: clamp(32px, 8vw, 72px);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      font-weight: 700;
+      /* Better readability on iPhone 15 */
+      letter-spacing: -0.02em;
+    }
+    
+    .hero-text p {
+      font-size: clamp(16px, 4vw, 24px);
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    
+    /* iPhone 15 specific optimizations (393px viewport) */
+    @media only screen and (max-width: 430px) {
+      .hero-text h1 {
+        font-size: clamp(28px, 9vw, 48px);
+      }
+      
+      .hero-text p {
+        font-size: clamp(15px, 4.5vw, 20px);
+      }
+      
+      section {
+        padding: max(60px, env(safe-area-inset-top)) 16px max(60px, env(safe-area-inset-bottom));
+      }
+      
+      .btn {
+        padding: 16px 32px;
+        font-size: 16px;
+      }
+    }
+    
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      background: rgba(120, 255, 210, 0.1);
+      border: 1px solid rgba(120, 255, 210, 0.3);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    
+    .pulse-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--accent-mint);
+      border-radius: 50%;
+      animation: pulse-dot 2s ease-in-out infinite;
+      box-shadow: 0 0 20px var(--accent-mint);
+    }
+    
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.7; }
+    }
+    
+    /* 3D ROUTE VISUALIZATION */
+    .route-viz {
+      position: relative;
+      height: 400px;
+      border-radius: 24px;
+      background: radial-gradient(circle at 30% 40%, 
+        rgba(120, 255, 210, 0.08) 0%,
+        transparent 70%);
+      overflow: hidden;
+      transform-style: preserve-3d;
+    }
+    
+    .route-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .route-path {
+      fill: none;
+      stroke: url(#routeGradient);
+      stroke-width: 4;
+      stroke-linecap: round;
+      filter: drop-shadow(0 0 20px rgba(120, 255, 210, 0.4));
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      transition: stroke-dashoffset 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .route-path.animated {
+      stroke-dashoffset: 0;
+    }
+    
+    .city-marker {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--accent-mint);
+      border-radius: 50%;
+      box-shadow: 0 0 30px var(--accent-mint);
+      animation: marker-pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes marker-pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.2); }
+    }
+    
+    .city-label {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 8px 12px;
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+    }
+    
+    /* REPAIR GLASS CANVAS */
+    .glass-repair-section {
+      width: 100%;
+      max-width: 1200px;
+      padding: 40px;
+    }
+    
+    .repair-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    
+    @media (max-width: 968px) {
+      .repair-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .canvas-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    #repairCanvas {
+      display: block;
+      width: 100%;
+      height: 400px;
+      cursor: crosshair;
+      touch-action: none; /* Prevent default iOS gestures */
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 100px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-mint), var(--accent-coral));
+      border-radius: 100px;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 20px var(--accent-mint);
+    }
+    
+    /* LISTENING SECTION */
+    .wave-visual {
+      position: relative;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 30px 0;
+    }
+    
+    .wave-bar {
+      position: absolute;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to top, var(--accent-mint), transparent);
+      animation: wave-dance 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes wave-dance {
+      0%, 100% { height: 20%; }
+      50% { height: 80%; }
+    }
+    
+    .timer-display {
+      font-size: 48px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+      margin: 20px 0;
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    /* MEMORY CAROUSEL - iOS Swipe Optimized */
+    .memory-carousel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 20px 0;
+      -webkit-overflow-scrolling: touch; /* iOS momentum */
+      scrollbar-width: none; /* Hide scrollbar */
+      -ms-overflow-style: none;
+      /* Smooth deceleration on iOS */
+      scroll-behavior: smooth;
+    }
+    
+    .memory-carousel::-webkit-scrollbar {
+      display: none; /* Hide scrollbar on webkit */
+    }
+    
+    .memory-card {
+      min-width: 300px;
+      padding: 30px;
+      scroll-snap-align: start;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+    }
+    
+    .memory-card:hover {
+      transform: translateY(-8px) rotateZ(1deg);
+    }
+    
+    .memory-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, 
+        rgba(120, 255, 210, 0.1),
+        rgba(255, 180, 153, 0.1));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 28px;
+    }
+    
+    .memory-card:hover::before {
+      opacity: 1;
+    }
+    
+    .memory-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    
+    .memory-text {
+      color: var(--text-secondary);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    /* DISTANCE SLIDER */
+    .distance-viz {
+      padding: 60px 40px;
+    }
+    
+    .km-display {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 700;
+      text-align: center;
+      margin: 30px 0;
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral), var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .custom-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 100px;
+      outline: none;
+      margin: 40px 0;
+    }
+    
+    .custom-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral));
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(120, 255, 210, 0.6);
+      transition: transform 0.2s ease;
+    }
+    
+    .custom-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+    }
+    
+    .custom-slider::-moz-range-thumb {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--accent-mint), var(--accent-coral));
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(120, 255, 210, 0.6);
+      border: none;
+    }
+    
+    /* HEART SYNC GAME */
+    .heart-game {
+      text-align: center;
+      padding: 40px;
+    }
+    
+    .heart-pulse {
+      width: 100px;
+      height: 100px;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .heart-icon {
+      font-size: 48px;
+      animation: heartbeat 1s ease-in-out infinite;
+      filter: drop-shadow(0 0 20px var(--accent-coral));
+    }
+    
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      30% { transform: scale(1.3); }
+      50% { transform: scale(1.1); }
+    }
+    
+    /* HEART GAME TAP - iOS Touch Optimized */
+    .tap-button {
+      width: 200px;
+      height: 200px;
+      margin: 40px auto;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--accent-mint), var(--accent-coral));
+      border: none;
+      font-size: 32px;
+      font-weight: 700;
+      color: #000;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 10px 40px rgba(120, 255, 210, 0.4);
+      /* iOS optimizations */
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      touch-action: manipulation;
+      /* Larger touch target for accessibility */
+      position: relative;
+    }
+    
+    .tap-button::before {
+      content: '';
+      position: absolute;
+      inset: -20px; /* Expand touch area */
+      border-radius: 50%;
+    }
+    
+    .tap-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 50px rgba(120, 255, 210, 0.6);
+    }
+    
+    .tap-button:active {
+      transform: scale(0.95);
+    }
+    
+    .game-score {
+      font-size: 24px;
+      margin: 20px 0;
+      font-weight: 600;
+    }
+    
+    /* FINAL RSVP */
+    .rsvp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 40px 0;
+    }
+    
+    @media (max-width: 768px) {
+      .rsvp-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .rsvp-option {
+      padding: 32px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      border: 2px solid transparent;
+    }
+    
+    .rsvp-option:hover {
+      transform: translateY(-6px);
+      border-color: rgba(120, 255, 210, 0.5);
+    }
+    
+    .rsvp-option.selected {
+      border-color: var(--accent-mint);
+      background: rgba(120, 255, 210, 0.1);
+    }
+    
+    .rsvp-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    
+    .rsvp-desc {
+      color: var(--text-secondary);
+      font-size: 16px;
+    }
+    
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%) translateY(150%);
+      padding: 20px 32px;
+      background: rgba(0, 0, 0, 0.9);
+      border: 1px solid var(--accent-mint);
+      border-radius: 100px;
+      color: var(--text-primary);
+      font-weight: 600;
+      z-index: 10000;
+      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+    
+    /* SCROLL PROGRESS */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-mint), var(--accent-coral), var(--accent-purple));
+      z-index: 10000;
+      transition: width 0.1s ease-out;
+    }
+    
+    /* LETTER SECTION */
+    .letter-paper {
+      padding: 50px;
+      background: radial-gradient(circle at 30% 30%, 
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.03));
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .letter-paper::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, 
+        rgba(120, 255, 210, 0.05) 0%,
+        transparent 70%);
+      animation: letter-glow 10s ease-in-out infinite;
+    }
+    
+    @keyframes letter-glow {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(10%, 10%) scale(1.1); }
+    }
+    
+    .letter-text {
+      position: relative;
+      z-index: 1;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 2.5vw, 24px);
+      line-height: 1.8;
+      color: var(--text-primary);
+    }
+    
+    .letter-text p {
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: letter-reveal 1s ease forwards;
+    }
+    
+    .letter-text p:nth-child(1) { animation-delay: 0.1s; }
+    .letter-text p:nth-child(2) { animation-delay: 0.2s; }
+    .letter-text p:nth-child(3) { animation-delay: 0.3s; }
+    .letter-text p:nth-child(4) { animation-delay: 0.4s; }
+    .letter-text p:nth-child(5) { animation-delay: 0.5s; }
+    .letter-text p:nth-child(6) { animation-delay: 0.6s; }
+    .letter-text p:nth-child(7) { animation-delay: 0.7s; }
+    .letter-text p:nth-child(8) { animation-delay: 0.8s; }
+    .letter-text p:nth-child(9) { animation-delay: 0.9s; }
+    .letter-text p:nth-child(10) { animation-delay: 1.0s; }
+    .letter-text p:nth-child(11) { animation-delay: 1.1s; }
+    .letter-text p:nth-child(12) { animation-delay: 1.2s; }
+    .letter-text p:nth-child(13) { animation-delay: 1.3s; }
+    .letter-text p:nth-child(14) { animation-delay: 1.4s; }
+    
+    @keyframes letter-reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .signature {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 28px;
+      margin-top: 40px;
+      color: var(--accent-mint);
+    }
+    
+    /* LOADING ANIMATION */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in-up {
+      animation: fadeInUp 1s ease forwards;
+    }
+    
+    /* EASTER EGG */
+    .easter-egg {
+      display: none;
+      margin-top: 30px;
+      padding: 30px;
+      background: linear-gradient(135deg, 
+        rgba(120, 255, 210, 0.1),
+        rgba(255, 180, 153, 0.1));
+      border: 1px dashed var(--accent-mint);
+      border-radius: 20px;
+      animation: fadeInUp 0.8s ease;
+    }
+    
+    .easter-egg.revealed {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- UZAY YILDIZLARI -->
+  <div class="stars" id="stars1"></div>
+  <div class="stars2" id="stars2"></div>
+  <div class="stars3" id="stars3"></div>
+  
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  
+  <!-- Ambient Particles -->
+  <div class="particles" id="particles"></div>
+  
+  <!-- Gate Overlay -->
+  <div class="gate-overlay" id="gateOverlay">
+    <div class="gate-content glass spatial-card">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Adana/Sarıçam → Kayseri/Melikgazi · 325 km</span>
+      </div>
+      <h1 class="gate-title">
+        <span class="word-reveal" style="animation-delay: 0.1s">Eylülüm,</span><br>
+        <span class="word-reveal kinetic-text" style="animation-delay: 0.3s">Hazır mısın?</span>
+      </h1>
+      <p class="gate-subtitle word-reveal" style="animation-delay: 0.5s">
+        Bu link bir "şey" değil.<br>
+        Sana hazırlanmış bir <strong>an</strong>.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary" id="startBtn" onclick="startExperience()">
+          ✨ Başlayalım
+        </button>
+        <button class="btn btn-ghost" onclick="alert('Ne zaman istersen aşkım. Ben hep buradayım, seni bekliyorum. Seni seviyorum. ❤️')">
+          🕐 Sonra
+        </button>
+      </div>
+      <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
+        💡 İpucu: Ses açarsan daha gerçek olur
+      </p>
+    </div>
+  </div>
+  
+  <!-- Section 1: Hero -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="status-pill">
+            <div class="pulse-dot"></div>
+            <span>Uzak Mesafe · <span id="liveKm">325</span> km</span>
+          </div>
+          <h1>
+            Aramızda <span class="kinetic-text">kilometre</span> var.<br>
+            Ama ben yine de sana <span class="kinetic-text">geliyorum</span>.
+          </h1>
+          <p>
+            Bugün bir adımı ben atıyorum.<br>
+            Laf değil; <strong>düzen</strong>.
+          </p>
+          <button class="btn btn-primary" onclick="scrollToNext()">
+            🚀 Başlayalım
+          </button>
+        </div>
+        <div class="route-viz glass">
+          <svg class="route-svg" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#78FFD2;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#FFB499;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#C299FF;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path id="routePath" class="route-path" d="M 80,300 Q 250,100 420,300" />
+          </svg>
+          <div class="city-marker" style="left: 16%; top: 75%;"></div>
+          <div class="city-label" style="left: 16%; top: 85%;">Adana/Sarıçam</div>
+          <div class="city-marker" style="left: 84%; top: 75%;"></div>
+          <div class="city-label" style="left: 84%; top: 85%;">Kayseri/Melikgazi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 2: Glass Repair -->
+  <section id="repair">
+    <div class="glass-repair-section glass">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Kavga · Çünkü seni seviyorum</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0;">
+        Bazen en çok sevdiklerimizi…<br>
+        <span class="kinetic-text">en çok biz incitiyoruz</span>.
+      </h2>
+      <div class="repair-grid">
+        <div>
+          <p style="font-size: 18px; margin-bottom: 24px;">
+            Benim payım vardı. Gördüm.<br>
+            Şimdi "üstünü örtmek" değil — <strong>onaralım</strong>.
+          </p>
+          <button class="btn btn-primary" onclick="resetGlass()">
+            🔨 Camı Kır
+          </button>
+          <div class="progress-bar">
+            <div class="progress-fill" id="repairProgress"></div>
+          </div>
+          <p style="font-size: 14px; color: var(--text-muted); margin-top: 16px;">
+            <strong id="repairPercent">0%</strong> onarıldı
+          </p>
+          <p style="font-size: 14px; color: var(--text-secondary); margin-top: 16px;" id="repairHint">
+            💡 Parmağınla/mouse ile çatlakların üstünden geç
+          </p>
+        </div>
+        <div class="canvas-container">
+          <canvas id="repairCanvas" width="600" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 3: Listening -->
+  <section id="listening">
+    <div class="hero-container glass" style="padding: 60px 40px;">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Dinleme · Sadece sen</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0; text-align: center;">
+        Bugün seni <span class="kinetic-text">duymaya</span> geldim.
+      </h2>
+      <p style="text-align: center; font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 30px;">
+        Ben bazen haklı çıkmaya çalışırken seni duymayı kaçırıyorum.<br>
+        Bu defa <strong>savunma yok</strong>.
+      </p>
+      <div class="wave-visual" id="waveVisual"></div>
+      <div class="timer-display" id="timerDisplay">—</div>
+      <button class="btn btn-primary" onclick="startSilence()" id="silenceBtn">
+        🤫 3 Saniye Sessizlik
+      </button>
+      <p style="text-align: center; margin-top: 20px; color: var(--text-muted);" id="silenceStatus">
+        Sadece dinliyorum.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 4: Proof Cards -->
+  <section id="proof">
+    <div class="hero-container glass" style="padding: 60px 40px;">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>3 Kanıt · Sana söz</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0; text-align: center;">
+        Sana <span class="kinetic-text">üç kanıt</span>.
+      </h2>
+      <p style="text-align: center; font-size: 18px; color: var(--text-secondary); margin-bottom: 40px;">
+        Romantik söz değil; <strong>düzen</strong>.<br>
+        Uzak mesafede bile "güven" üretmek için.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="glass spatial-card" style="padding: 32px;">
+          <div style="font-size: 32px; margin-bottom: 16px;">🔓</div>
+          <h3 style="font-size: 24px; margin-bottom: 12px;">Dinleyeceğim.</h3>
+          <p style="color: var(--text-secondary);">
+            Cümlen bitmeden cevap vermeyeceğim.<br>
+            Anlamadıysam soru soracağım.
+          </p>
+        </div>
+        <div class="glass spatial-card" style="padding: 32px;">
+          <div style="font-size: 32px; margin-bottom: 16px;">❤️</div>
+          <h3 style="font-size: 24px; margin-bottom: 12px;">Her an seninleyim.</h3>
+          <p style="color: var(--text-secondary);">
+            Seviyorum kadınımı her an benimle.<br>
+            Allahıma hamd olsun karımı bana verdi. 🤲
+          </p>
+        </div>
+        <div class="glass spatial-card" style="padding: 32px;">
+          <div style="font-size: 32px; margin-bottom: 16px;">🔓</div>
+          <h3 style="font-size: 24px; margin-bottom: 12px;">Uzakta bile yanında olacağım.</h3>
+          <p style="color: var(--text-secondary);">
+            Her gün 1 küçük temas.<br>
+            "Nasılsın?"dan çok: "Ne hissettin?"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 5: Memories -->
+  <section id="memories">
+    <div class="hero-container glass" style="padding: 60px 40px;">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Anılar · Her detayını hatırlıyorum</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0;">
+        Ben seni… <span class="kinetic-text">detaylarından</span> seviyorum.
+      </h2>
+      <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 30px;">
+        Hatırlamak, önemsemektir. <em>(Kartlara dokun.)</em>
+      </p>
+      <div class="memory-carousel" id="memoryCarousel">
+        <!-- Memory cards will be generated here -->
+      </div>
+      <div class="easter-egg" id="easterEgg">
+        <h3 style="font-size: 24px; margin-bottom: 16px;">
+          ✨ İlk aşık olduğum an
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6;">
+          O an fark ettim: "Bu kadın benim kaderim."<br>
+          Gülüşün, sesin, bakışın, her şeyin... Her detayın yerli yerindeydi.<br>
+          İşte o anda anladım: <strong>Sen benim karımsın. Sen benim her şeyimsin.</strong><br>
+          Ve o günden beri her gün sana daha çok aşık oluyorum. ❤️
+        </p>
+      </div>
+      <p style="font-size: 14px; color: var(--text-muted); margin-top: 20px;">
+        💡 Easter egg: 3. karta 3 kez dokun 🙂
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 6: Distance -->
+  <section id="distance">
+    <div class="hero-container">
+      <div class="hero-grid">
+        <div class="distance-viz glass">
+          <div class="status-pill">
+            <div class="pulse-dot"></div>
+            <span>Rota · Adana/Sarıçam → Kayseri/Melikgazi</span>
+          </div>
+          <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0;">
+            Mesafe bazen sayı.<br>
+            <span class="kinetic-text">Özlem</span> hep gerçek.
+          </h2>
+          <p style="color: var(--text-secondary); margin-bottom: 30px;">
+            Slider'ı azalt: km düşsün, rota ısınsın.<br>
+            Ama "0 km" değil…
+          </p>
+          <div class="km-display" id="kmDisplay">325 km</div>
+          <input type="range" class="custom-slider" id="kmSlider" min="0" max="100" value="0">
+          <p style="text-align: center; font-size: 18px; margin-top: 30px;" id="kmMessage">
+            Mesafe var. Bağ daha yakın.
+          </p>
+          <p style="text-align: center; font-size: 24px; font-weight: 600; margin-top: 20px; color: var(--accent-mint);">
+            <strong>Slider'ı sağa kaydır → Evlenince 0 km! 💍</strong>
+          </p>
+        </div>
+        <div class="route-viz glass">
+          <svg class="route-svg" viewBox="0 0 500 400">
+            <path id="routePath2" class="route-path" d="M 80,300 Q 250,100 420,300" style="stroke-dashoffset: 600;" />
+          </svg>
+          <div class="city-marker" style="left: 16%; top: 75%;"></div>
+          <div class="city-marker" style="left: 84%; top: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 7: Letter -->
+  <section id="letter">
+    <div class="hero-container glass" style="padding: 60px 40px;">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Mektup · Kalbimden</span>
+      </div>
+      <div class="letter-paper">
+        <div class="letter-text">
+          <p><strong>Eylülüm, Aşkım, Meleğim, Canım, Karım,</strong></p>
+          
+          <p>Bunları yazarken elim titriyor. Çünkü sana anlatmak istediğim her şey kalbin içinde, ama bazen kelimeler yetersiz kalıyor.</p>
+          
+          <p>Ben seni delilercesine seviyorum. Delilercesine aşığım sana. Her sabah gözümü açtığımda ilk aklıma gelen sensin. Her gece uyumadan önce son düşündüğüm yine sen. 325 kilometre aramızda olsa ne olur? Kalbimde hep yanımdasın.</p>
+          
+          <p>Kavga ettiğimizde, tartıştığımızda bile... içimden bir ses "o senin karın, o senin meleğin" diye bağırıyor. Seni hiç kaybetmek istemiyorum. Asla. Çünkü sen benim her şeyimsin.</p>
+          
+          <p>Biliyorum, bazen yanlış konuşuyorum. Bazen sinirliyken haksızlık ediyorum. Ama Eylülüm, bil ki her hatamın arkasında seni kaybetme korkusu var. Sen benim hayatımın anlamısın.</p>
+          
+          <p>Ajda'da hem arsa alacağız hem de ev alacağız inşallah. Havuzlu villamızı yaptıracağız. Senle birlikte her hayalimi kuracağım. Her planımda sen varsın. Çünkü sensiz hiçbir hayalin, hiçbir planın anlamı yok.</p>
+          
+          <p>Ben Adana'da Sarıçam'dayım, sen Kayseri'de Melikgazi'desin... ama ruhlarımız aynı yerde. Kalbimiz aynı ritimde atıyor. Sen benim evimsin, huzurumun, sığındığım tek liman.</p>
+          
+          <p>Sana söz veriyorum: Seni her gün daha çok seveceğim. Her gün sana daha iyi bir eş olmaya çalışacağım. Çünkü sen bunu hak ediyorsun. Sen her şeyin en güzelini hak ediyorsun.</p>
+          
+          <p>Bu mektubu yazarken gözlerim doldu. Çünkü ne kadar şanslı olduğumu düşündüm. Senin gibi bir meleğe sahip olmak... bu dünyanın en büyük nimeti.</p>
+          
+          <p>Eylülüm, ben seninle yaşlanmak istiyorum. Seninle her anımı paylaşmak, seninle her günü birlikte geçirmek istiyorum. Evlendiğimizde mesafe sıfır olacak inşallah. Sen benim karımsın, aşkımsın, her şeyimsin.</p>
+          
+          <p><strong>Seni delilercesine seviyorum. Sana delilercesine aşığım.</strong></p>
+          
+          <p>Her zaman ve sonsuza kadar...</p>
+          
+          <p class="signature">— Senin Yusuf'un ❤️</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 16px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
+        <button class="btn btn-ghost" onclick="revealConfession()">
+          💭 Tek cümlelik itiraf
+        </button>
+      </div>
+      <p style="text-align: center; display: none; margin-top: 20px; font-style: italic; color: var(--text-secondary);" id="confession">
+        "Seni her gördüğümde sanki ilk defa görüyormuşum gibi heyecanlanıyorum. Sen benim mucizem, benim hayatımın aşkısın."
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 8: Heart Game -->
+  <section id="heartGame">
+    <div class="hero-container glass heart-game">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Kalp Senkronu · Mini oyun</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0;">
+        Aynı <span class="kinetic-text">ritme</span> dönebiliriz.
+      </h2>
+      <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 30px;">
+        Kalp ritmine uyarak 5 "iyi" vuruş yakala.
+      </p>
+      <div class="heart-pulse">
+        <div class="heart-icon">❤️</div>
+      </div>
+      <button class="tap-button" id="tapButton" onclick="handleTap()">
+        TAP
+      </button>
+      <div class="game-score">
+        <span style="color: var(--accent-mint);">İyi: <strong id="goodHits">0</strong>/5</span> · 
+        <span style="color: var(--accent-coral);">Kaçan: <strong id="badHits">0</strong></span>
+      </div>
+      <p id="gameStatus" style="font-size: 16px; color: var(--text-secondary); margin-top: 20px;">
+        💡 İpucu: Tam "büyüdüğü" anda bas
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 9: RSVP -->
+  <section id="rsvp">
+    <div class="hero-container glass" style="padding: 60px 40px;">
+      <div class="status-pill">
+        <div class="pulse-dot"></div>
+        <span>Final · Hep seninleyim</span>
+      </div>
+      <h2 style="font-size: clamp(28px, 5vw, 48px); margin: 20px 0; text-align: center;">
+        Bu akşam…?
+      </h2>
+      <p style="text-align: center; font-size: 18px; color: var(--text-secondary); margin-bottom: 40px;">
+        Üstünü örtmek değil; <strong>yeniden seçmek</strong>.
+      </p>
+      <div class="rsvp-grid">
+        <div class="glass rsvp-option spatial-card selected" data-id="call" onclick="selectOption('call')">
+          <div class="rsvp-title">📞 Seni çok seviyorum kocacım</div>
+          <div class="rsvp-desc">Hemen seni arıyorum. ❤️</div>
+        </div>
+        <div class="glass rsvp-option spatial-card" data-id="later" onclick="selectOption('later')">
+          <div class="rsvp-title">⏰ İstediğin zaman</div>
+          <div class="rsvp-desc">Mesajı kopyala, bana yapıştır. 💕</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 16px; justify-content: center; margin-top: 40px; flex-wrap: wrap;">
+        <button class="btn btn-primary" onclick="copyMessage()">
+          📋 Mesajı Kopyala
+        </button>
+      </div>
+      <p style="text-align: center; font-size: 14px; color: var(--text-muted); margin-top: 20px;">
+        💡 Mesajı kopyala, WhatsApp'a yapıştır, bana gönder ❤️
+      </p>
+      <p style="text-align: center; font-size: 24px; font-weight: 600; margin-top: 40px; color: var(--accent-mint);">
+        <span class="kinetic-text">ZERO KM</span>: Ben karımcıyım. ❤️
+      </p>
+    </div>
+  </section>
+  
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Mesaj kopyalandı! ✅</div>
+  
+  <script>
+    // 2026 PERFORMANCE OPTIMIZATIONS
+    // Lazy load images and heavy content
+    const lazyLoad = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          if (target.dataset.src) {
+            target.src = target.dataset.src;
+            target.removeAttribute('data-src');
+          }
+          observer.unobserve(target);
+        }
+      });
+    };
+    
+    const lazyObserver = new IntersectionObserver(lazyLoad, {
+      rootMargin: '50px'
+    });
+    
+    // Passive event listeners for better scroll performance
+    const passiveSupported = (() => {
+      let passive = false;
+      try {
+        const options = {
+          get passive() {
+            passive = true;
+            return false;
+          }
+        };
+        window.addEventListener('test', null, options);
+        window.removeEventListener('test', null, options);
+      } catch (err) {
+        passive = false;
+      }
+      return passive;
+    })();
+    
+    const passiveOpt = passiveSupported ? { passive: true } : false;
+    
+    // 2026 HAPTIC FEEDBACK SYSTEM - iOS Optimized
+    const haptic = {
+      light: () => {
+        if (navigator.vibrate) navigator.vibrate(10);
+      },
+      medium: () => {
+        if (navigator.vibrate) navigator.vibrate(20);
+      },
+      heavy: () => {
+        if (navigator.vibrate) navigator.vibrate(30);
+      },
+      success: () => {
+        if (navigator.vibrate) navigator.vibrate([10, 50, 10, 50, 20]);
+      },
+      error: () => {
+        if (navigator.vibrate) navigator.vibrate([30, 50, 30]);
+      },
+      impact: () => {
+        if (navigator.vibrate) navigator.vibrate(15);
+      },
+      heartbeat: () => {
+        if (navigator.vibrate) navigator.vibrate([30, 100, 30]);
+      }
+    };
+    
+    // Configuration
+    const CONFIG = {
+      partnerName: "Eylülüm",
+      fromCity: "Adana/Sarıçam",
+      toCity: "Kayseri/Melikgazi",
+      totalKm: 325,
+      memories: [
+        { title: "O gün", text: "Gülüşün… bütün şehri susturmuştu." },
+        { title: "Sesin", text: "Uzakta bile sesin bana iyi geliyor." },
+        { title: "Biz", text: "En güzel plan: seninle sıradan bir gün." },
+        { title: "Sabır", text: "Zor günlerde bile kalbini güzel tutuyorsun." },
+        { title: "Gelecek", text: "Benim hayalimde sen hep varsın." },
+        { title: "Ev", text: "Benim evim yer değil. Senin olduğun yer." }
+      ]
+    };
+    
+    let selectedOption = 'call';
+    let tapCount3 = 0;
+    let gameHits = 0;
+    let gameMisses = 0;
+    let gameStartTime = performance.now();
+    
+    // Start Experience
+    function startExperience() {
+      const gate = document.getElementById('gateOverlay');
+      gate.classList.add('hidden');
+      
+      // Enhanced haptic feedback
+      haptic.success();
+      
+      // Animate route path
+      setTimeout(() => {
+        document.getElementById('routePath').classList.add('animated');
+        haptic.light();
+      }, 500);
+      
+      // Initialize stars
+      initStars();
+      
+      // Initialize particles
+      initParticles();
+      
+      // Initialize scroll observers
+      initScrollObservers();
+      
+      // Initialize canvas
+      initRepairCanvas();
+      
+      // Initialize wave visualization
+      initWaveVisual();
+      
+      // Initialize memory carousel
+      initMemoryCarousel();
+    }
+    
+    // Stars (UZAY YILDIZLARI)
+    function initStars() {
+      const layers = [
+        { id: 'stars1', count: 100, maxSize: 2 },
+        { id: 'stars2', count: 80, maxSize: 1.5 },
+        { id: 'stars3', count: 60, maxSize: 1 }
+      ];
+      
+      layers.forEach(layer => {
+        const container = document.getElementById(layer.id);
+        for (let i = 0; i < layer.count; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.style.left = Math.random() * 100 + '%';
+          star.style.top = Math.random() * 100 + '%';
+          star.style.width = (Math.random() * layer.maxSize + 0.5) + 'px';
+          star.style.height = star.style.width;
+          star.style.opacity = Math.random() * 0.7 + 0.3;
+          container.appendChild(star);
+        }
+      });
+    }
+    
+    // Particles
+    function initParticles() {
+      const container = document.getElementById('particles');
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (15 + Math.random() * 20) + 's';
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        container.appendChild(particle);
+      }
+    }
+    
+    // Scroll Observers
+    function initScrollObservers() {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+      
+      sections.forEach(section => observer.observe(section));
+    }
+    
+    // Scroll Progress
+    window.addEventListener('scroll', () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = window.scrollY;
+      const progress = (scrolled / scrollHeight) * 100;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+      
+      // Update live km based on scroll
+      const kmProgress = Math.max(0, CONFIG.totalKm - (scrolled / scrollHeight) * CONFIG.totalKm);
+      document.getElementById('liveKm').textContent = Math.round(kmProgress);
+    });
+    
+    // Scroll to Next Section
+    function scrollToNext() {
+      const nextSection = document.getElementById('repair');
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Repair Canvas
+    let repairCtx, repairCanvas, crackCanvas, crackCtx;
+    let isDrawing = false;
+    let repairProgress = 0;
+    
+    function initRepairCanvas() {
+      repairCanvas = document.getElementById('repairCanvas');
+      repairCtx = repairCanvas.getContext('2d');
+      
+      crackCanvas = document.createElement('canvas');
+      crackCanvas.width = repairCanvas.width;
+      crackCanvas.height = repairCanvas.height;
+      crackCtx = crackCanvas.getContext('2d');
+      
+      resetGlass();
+      
+      repairCanvas.addEventListener('pointerdown', startRepair);
+      repairCanvas.addEventListener('pointermove', repair);
+      repairCanvas.addEventListener('pointerup', stopRepair);
+      repairCanvas.addEventListener('pointerleave', stopRepair);
+    }
+    
+    function resetGlass() {
+      // Clear canvases
+      repairCtx.clearRect(0, 0, repairCanvas.width, repairCanvas.height);
+      crackCtx.clearRect(0, 0, crackCanvas.width, crackCanvas.height);
+      
+      // Draw cracks
+      drawCracks();
+      
+      // Reset progress
+      repairProgress = 0;
+      updateRepairUI();
+      
+      // Draw initial state
+      drawRepairState();
+    }
+    
+    function drawCracks() {
+      const centerX = crackCanvas.width / 2;
+      const centerY = crackCanvas.height / 2;
+      
+      crackCtx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+      crackCtx.lineWidth = 2;
+      crackCtx.shadowColor = 'rgba(120, 255, 210, 0.3)';
+      crackCtx.shadowBlur = 10;
+      
+      // Create radial cracks
+      for (let i = 0; i < 20; i++) {
+        const angle = (Math.PI * 2 / 20) * i + (Math.random() - 0.5) * 0.3;
+        const length = (Math.random() * 0.6 + 0.4) * Math.min(crackCanvas.width, crackCanvas.height) / 2;
+        
+        crackCtx.beginPath();
+        crackCtx.moveTo(centerX, centerY);
+        
+        let x = centerX;
+        let y = centerY;
+        
+        for (let j = 0; j < 8; j++) {
+          const t = j / 8;
+          x = centerX + Math.cos(angle) * length * t + (Math.random() - 0.5) * 20;
+          y = centerY + Math.sin(angle) * length * t + (Math.random() - 0.5) * 20;
+          crackCtx.lineTo(x, y);
+          
+          // Add branches
+          if (Math.random() < 0.3) {
+            const branchAngle = angle + (Math.random() - 0.5) * 1.5;
+            const branchLen = 40;
+            crackCtx.moveTo(x, y);
+            crackCtx.lineTo(
+              x + Math.cos(branchAngle) * branchLen,
+              y + Math.sin(branchAngle) * branchLen
+            );
+            crackCtx.moveTo(x, y);
+          }
+        }
+        
+        crackCtx.stroke();
+      }
+    }
+    
+    function startRepair(e) {
+      isDrawing = true;
+      repair(e);
+    }
+    
+    function repair(e) {
+      if (!isDrawing) return;
+      
+      const rect = repairCanvas.getBoundingClientRect();
+      const x = (e.clientX - rect.left) * (repairCanvas.width / rect.width);
+      const y = (e.clientY - rect.top) * (repairCanvas.height / rect.height);
+      
+      // Erase cracks
+      crackCtx.globalCompositeOperation = 'destination-out';
+      crackCtx.beginPath();
+      crackCtx.arc(x, y, 20, 0, Math.PI * 2);
+      crackCtx.fill();
+      crackCtx.globalCompositeOperation = 'source-over';
+      
+      // Update progress
+      calculateRepairProgress();
+      drawRepairState();
+      
+      // Haptic feedback on iOS - subtle but satisfying
+      if (Math.random() < 0.2) {
+        haptic.light();
+      }
+    }
+    
+    function stopRepair() {
+      isDrawing = false;
+    }
+    
+    function calculateRepairProgress() {
+      const imageData = crackCtx.getImageData(0, 0, crackCanvas.width, crackCanvas.height);
+      let totalAlpha = 0;
+      
+      for (let i = 3; i < imageData.data.length; i += 4) {
+        totalAlpha += imageData.data[i];
+      }
+      
+      const maxAlpha = crackCanvas.width * crackCanvas.height * 255;
+      repairProgress = 1 - (totalAlpha / maxAlpha);
+      repairProgress = Math.max(0, Math.min(1, repairProgress));
+      
+      updateRepairUI();
+    }
+    
+    function drawRepairState() {
+      const heat = repairProgress;
+      
+      // Background gradient
+      const gradient = repairCtx.createRadialGradient(
+        repairCanvas.width / 2, repairCanvas.height / 2, 0,
+        repairCanvas.width / 2, repairCanvas.height / 2, repairCanvas.width / 2
+      );
+      
+      gradient.addColorStop(0, `rgba(120, 255, 210, ${0.08 + heat * 0.1})`);
+      gradient.addColorStop(0.5, `rgba(120, 180, 255, ${0.05 * (1 - heat)})`);
+      gradient.addColorStop(0.7, `rgba(255, 180, 120, ${0.05 * heat})`);
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      
+      repairCtx.fillStyle = gradient;
+      repairCtx.fillRect(0, 0, repairCanvas.width, repairCanvas.height);
+      
+      // Draw cracks
+      repairCtx.globalAlpha = 0.9;
+      repairCtx.drawImage(crackCanvas, 0, 0);
+      repairCtx.globalAlpha = 1;
+    }
+    
+    function updateRepairUI() {
+      const percent = Math.round(repairProgress * 100);
+      document.getElementById('repairProgress').style.width = percent + '%';
+      document.getElementById('repairPercent').textContent = percent + '%';
+      
+      const hint = document.getElementById('repairHint');
+      if (percent >= 95) {
+        hint.textContent = '✨ Özür, bir kelime değil. Bir eylem.';
+        hint.style.color = 'var(--accent-mint)';
+      } else {
+        hint.textContent = '💡 Çatlakları "silince" ortam ısınıyor';
+        hint.style.color = 'var(--text-secondary)';
+      }
+    }
+    
+    // Wave Visualization
+    function initWaveVisual() {
+      const container = document.getElementById('waveVisual');
+      for (let i = 0; i < 40; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'wave-bar';
+        bar.style.left = (i * 2.5) + '%';
+        bar.style.animationDelay = (i * 0.05) + 's';
+        bar.style.animationDuration = (1 + Math.random() * 0.5) + 's';
+        container.appendChild(bar);
+      }
+    }
+    
+    // Silence Timer
+    let silenceTimer = null;
+    function startSilence() {
+      if (silenceTimer) return;
+      
+      const btn = document.getElementById('silenceBtn');
+      const status = document.getElementById('silenceStatus');
+      const display = document.getElementById('timerDisplay');
+      
+      btn.disabled = true;
+      btn.style.opacity = '0.5';
+      
+      let seconds = 3;
+      display.textContent = seconds;
+      status.textContent = '🤫 Sadece dinliyorum...';
+      
+      silenceTimer = setInterval(() => {
+        seconds--;
+        if (seconds <= 0) {
+          clearInterval(silenceTimer);
+          silenceTimer = null;
+          display.textContent = '✓';
+          status.textContent = '✨ Devam edebiliriz.';
+          btn.disabled = false;
+          btn.style.opacity = '1';
+          
+          // Success haptic pattern
+          haptic.success();
+        } else {
+          display.textContent = seconds;
+        }
+      }, 1000);
+    }
+    
+    // Memory Carousel with Swipe Gesture Support
+    function initMemoryCarousel() {
+      const carousel = document.getElementById('memoryCarousel');
+      let startX = 0;
+      let scrollLeft = 0;
+      let isDown = false;
+      
+      CONFIG.memories.forEach((memory, index) => {
+        const card = document.createElement('div');
+        card.className = 'memory-card glass spatial-card';
+        card.innerHTML = `
+          <div class="memory-title">${memory.title}</div>
+          <div class="memory-text">${memory.text}</div>
+        `;
+        
+        card.addEventListener('click', () => {
+          haptic.light();
+          
+          if (index === 2) {
+            tapCount3++;
+            if (tapCount3 >= 3) {
+              document.getElementById('easterEgg').classList.add('revealed');
+              haptic.success();
+            }
+          }
+        });
+        
+        carousel.appendChild(card);
+      });
+      
+      // Swipe gesture support for iOS
+      carousel.addEventListener('touchstart', (e) => {
+        isDown = true;
+        startX = e.touches[0].pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+      
+      carousel.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2;
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+      
+      carousel.addEventListener('touchend', () => {
+        isDown = false;
+        haptic.light();
+      });
+    }
+    
+    // Distance Slider
+    const kmSlider = document.getElementById('kmSlider');
+    kmSlider.addEventListener('input', updateDistance);
+    
+    function updateDistance() {
+      const value = parseInt(kmSlider.value);
+      
+      // Allow true 0 km when slider is at max (marriage!)
+      let remaining;
+      if (value === 100) {
+        remaining = 0;
+      } else {
+        remaining = Math.round(CONFIG.totalKm * (1 - value / 100) * 0.92 + CONFIG.totalKm * 0.08);
+      }
+      
+      document.getElementById('kmDisplay').textContent = remaining + ' km';
+      
+      const path2 = document.getElementById('routePath2');
+      const pathLen = 2000;
+      path2.style.strokeDashoffset = pathLen * (1 - value / 100);
+      
+      // Update color based on closeness
+      const closeness = value / 100;
+      const r = Math.round(120 + 90 * closeness);
+      const g = Math.round(255 - 70 * closeness);
+      const b = Math.round(210 - 120 * closeness);
+      path2.style.stroke = `rgba(${r}, ${g}, ${b}, ${0.6 + closeness * 0.3})`;
+      
+      const msg = document.getElementById('kmMessage');
+      if (value === 100) {
+        msg.innerHTML = '💍 <strong>EVLENİNCE MESAFE SIFIR OLACAK İNŞALLAH!</strong> 🤲❤️';
+        msg.style.color = 'var(--accent-mint)';
+        msg.style.fontSize = '22px';
+      } else if (value > 85) {
+        msg.textContent = '💫 0 km\'ye yaklaşıyoruz... Evlenince sıfır!';
+        msg.style.color = 'var(--text-primary)';
+        msg.style.fontSize = '18px';
+      } else if (value > 50) {
+        msg.textContent = '✨ Mesafe azalıyor. Güven artsın.';
+        msg.style.color = 'var(--text-primary)';
+        msg.style.fontSize = '18px';
+      } else {
+        msg.textContent = '💙 Mesafe var. Bağ daha yakın.';
+        msg.style.color = 'var(--text-primary)';
+        msg.style.fontSize = '18px';
+      }
+    }
+    
+    // Letter Confession
+    function revealConfession() {
+      const confession = document.getElementById('confession');
+      confession.style.display = confession.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    // Heart Game
+    const BPM = 60;
+    const beatInterval = 60000 / BPM;
+    
+    function handleTap() {
+      if (gameHits >= 5) return;
+      
+      const now = performance.now();
+      const elapsed = now - gameStartTime;
+      const phase = (elapsed % beatInterval) / beatInterval;
+      
+      // Check if tap is in sync (around 0.3 phase)
+      const target = 0.3;
+      const diff = Math.abs(phase - target);
+      const isGood = diff < 0.12;
+      
+      if (isGood) {
+        gameHits++;
+        document.getElementById('goodHits').textContent = gameHits;
+        
+        if (gameHits >= 5) {
+          document.getElementById('gameStatus').innerHTML = '🎉 <strong>Bak… aynı ritme dönebiliyoruz!</strong>';
+          document.getElementById('tapButton').style.opacity = '0.5';
+          document.getElementById('tapButton').style.cursor = 'not-allowed';
+          
+          // Victory haptic
+          haptic.success();
+        } else {
+          document.getElementById('gameStatus').textContent = '✓ Güzel! Bir tane daha.';
+          haptic.impact();
+        }
+      } else {
+        gameMisses++;
+        document.getElementById('badHits').textContent = gameMisses;
+        document.getElementById('gameStatus').textContent = '↻ Olmadıysa sorun değil. Yeniden deneriz.';
+        haptic.error();
+      }
+    }
+    
+    // RSVP
+    function selectOption(id) {
+      selectedOption = id;
+      document.querySelectorAll('.rsvp-option').forEach(option => {
+        option.classList.toggle('selected', option.dataset.id === id);
+      });
+    }
+    
+    function copyMessage() {
+      const messages = {
+        call: `Seni çok seviyorum kocacım, hemen seni arıyorum! ❤️📞`,
+        later: `${CONFIG.partnerName}, aşkım, karım... Ben seni delilercesine seviyorum. ZERO KM yaptım senin için. ${CONFIG.fromCity}–${CONFIG.toCity} arası ${CONFIG.totalKm} km ama ben hep yanındayım. Evlendiğimizde mesafe sıfır olacak inşallah. Seni o kadar özledim ki... Ne zaman müsaitsen konuşalım mı? Her an senin için buradayım. Seni seviyorum karım. ❤️💕`
+      };
+      
+      const message = messages[selectedOption];
+      
+      navigator.clipboard.writeText(message).then(() => {
+        if (selectedOption === 'call') {
+          showToast('📞 Kopyalandı! "Seni çok seviyorum kocacım, hemen seni arıyorum!" ✅');
+        } else {
+          showToast('📋 Mesaj kopyalandı! Şimdi bana yapıştır ve gönder ❤️');
+        }
+      }).catch(() => {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = message;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (selectedOption === 'call') {
+          showToast('📞 Kopyalandı! "Seni çok seviyorum kocacım!" ✅');
+        } else {
+          showToast('📋 Mesaj kopyalandı! Bana gönder ❤️');
+        }
+      });
+    }
+    
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
